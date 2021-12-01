@@ -8,3 +8,8 @@ provided by UCI using Amazon Sagemaker IDE.
 3. runs the processing job and stores their outputs(prepared features) at mentioned location in s3 bucket
 
 ## second commit
+1. create a sagemaker experiment(tracked under trials) to run a xgb classifier over the prepared data
+2. set up a batch transform endpoint locally
+3. define a function to pull the output of batch transform job
+4. evaluate the model using accuracy_score and confusion matrix
+5. compare the baseline model accuracy and the model accuracy(pre-trained xgb model provided by sagemaker team)
